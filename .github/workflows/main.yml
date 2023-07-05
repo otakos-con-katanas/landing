@@ -18,7 +18,7 @@ jobs:
         host: ${{ secrets.HOSTNAME }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: build/*
+        source: build/*, Dockerfile
         target: ${{ secrets.WORKDIR }}/landing
     
 
