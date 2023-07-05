@@ -1,6 +1,5 @@
-import '../App.css';
 
-const Header = (props: any) => {
+export default function Header(props: any) {
     
     return <>
     <header className="header">
@@ -8,5 +7,3 @@ const Header = (props: any) => {
     </header>
     </>    
 }
-
-export default Header
