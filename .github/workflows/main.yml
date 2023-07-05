@@ -22,7 +22,7 @@ jobs:
         target: ${{ secrets.WORKDIR }}/landing
     - uses: convictional/trigger-workflow-and-wait@v1.6.1
       with:
-        owner: otakos-con-katanas/
+        owner: otakos-con-katanas
         repo: mono
         github_token: ${{ secrets.GH_TOKEN }}
         workflow_file_name: run.yaml
