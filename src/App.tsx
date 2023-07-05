@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
+import './App.css'
 
-import './App.css';
-import Card from './component/Card';
-import SideNav from './component/SideNav';
-import Header from './component/Header';
+import SideNav from './component/SideNav'
+import Header from './component/Header'
 
 function App() {
   return (
@@ -18,22 +17,7 @@ function App() {
       </div>
     </div>
     
-  );
-  {/* <div className='App'>
-      <header className='header'>
-        <div>X</div>
-        <div>
-          <button>x</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>42</button>
-        </div>
-      </header>
-      <nav>
-        ola
-      </nav>
-    </div> */}
+  )
 }
 
-export default App;
+export default App
