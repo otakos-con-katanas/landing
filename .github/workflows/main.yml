@@ -20,6 +20,11 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: build/*, Dockerfile
         target: ${{ secrets.WORKDIR }}/landing
-    
+    - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      with:
+        owner: otakos-con-katanas/
+        repo: mono
+        github_token: ${{GH_TOKEN}}
+        workflow_file_name: run.yaml
 
         
