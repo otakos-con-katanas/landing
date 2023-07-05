@@ -1,0 +1,17 @@
+on: push
+name: deploy
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.HOSTNAME }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        source: "."
+        target: ${{ secrets.WORKDIR }}/landing
+    
+
+        
