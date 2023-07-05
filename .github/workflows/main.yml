@@ -10,7 +10,7 @@ jobs:
         host: ${{ secrets.HOSTNAME }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: "*"
+        source: "./*"
         target: ${{ secrets.WORKDIR }}/landing
     
 
